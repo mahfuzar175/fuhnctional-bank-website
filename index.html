@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>Bank</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-r from-indigo-400">
@@ -28,7 +28,29 @@
                 </div>
             </div>  
         </section>
+        <!-- deposit and withdraw saction -->
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-fuchsia-800 p-8 rounded-md">
+                    <h3 class="text-4xl text-white mb-4">Your Deposite</h3>
+                    <div class="ml-10">
+                    <input id="deposit-field" class="w-3/4 px-3 rounded block" type="text" name="" placeholder="$ Amount you want to deposit">
+                    <button class="bg-rose-600 hover:bg-green-600 px-8 py-2 text-white font-medium rounded-lg mt-4" id="btn-deposit">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-violet-800 p-8 rounded-md">
+                    <h3 class="text-4xl text-white mb-4">Your Withdaw</h3>
+                    <div class="ml-10">
+                    <input id="withdraw-field" class="w-3/4 px-3 rounded block" type="text" name="" placeholder="$ Amount you want to withdraw">
+                    <button class="bg-green-600 hover:bg-rose-600 px-8 py-2 text-white font-medium rounded-lg mt-4" id="btn-withdraw">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8 text-center">
+            <button id="btn-logout" class="bg-black hover:bg-yellow-700 px-8 py-2 text-white font-medium rounded-lg" type="submit">Withdraw</button>
+        </section>
     </main>
-    
+    <script src="js/index.js"></script>
 </body>
 </html>
